@@ -1,0 +1,43 @@
+{
+  "name": "get-ip-info",
+  "version": "0.0.1",
+  "maintainers": [
+    "Kirill Molchanov <k03.mad@gmail.com"
+  ],
+  "repository": "k03mad/get-ip-info",
+  "main": "./app/ip.js",
+  "bin": {
+    "ip-info": "./app/ip.js"
+  },
+  "preferGlobal": true,
+  "engines": {
+    "node": ">=13"
+  },
+  "dependencies": {
+    "colorette": "1.1.0",
+    "command-line-args": "5.1.1",
+    "command-line-usage": "6.1.0",
+    "utils-mad": "7.4.0",
+    "xml-js": "1.6.11"
+  },
+  "devDependencies": {
+    "eslint": "6.8.0",
+    "eslint-config-k03mad": "4.1.1",
+    "eslint-plugin-const-case": "1.2.2",
+    "eslint-plugin-jsdoc": "22.1.0",
+    "eslint-plugin-node": "11.0.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-sonarjs": "0.5.0",
+    "eslint-plugin-sort-requires": "2.1.0",
+    "eslint-plugin-unicorn": "17.2.0",
+    "pre-commit": "1.2.2"
+  },
+  "scripts": {
+    "lint": "eslint --report-unused-disable-directives ./ --format codeframe",
+    "setup": "pnpm i && pnpm prune"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "license": "Unlicense"
+}
