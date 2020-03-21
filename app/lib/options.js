@@ -3,7 +3,7 @@
 const {blue, cyan, yellow, red} = require('colorette');
 
 module.exports = {
-    indent: '| ',
+    indent: '⎣ ',
 
     numbersRegExp: /^[\d ,.-]+$/i,
 

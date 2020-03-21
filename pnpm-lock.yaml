@@ -6,7 +6,7 @@ dependencies:
   xml-js: 1.6.11
 devDependencies:
   eslint: 6.8.0
-  eslint-config-k03mad: 4.1.1_8845b19ce6ea06e20ce30d578809b8d2
+  eslint-config-k03mad: 4.2.0_8845b19ce6ea06e20ce30d578809b8d2
   eslint-plugin-const-case: 1.2.2
   eslint-plugin-jsdoc: 22.1.0_eslint@6.8.0
   eslint-plugin-node: 11.0.0_eslint@6.8.0
@@ -607,7 +607,7 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-otzzTim2/1+lVrlH19EfQQJEhVJSu0zOb9ygb3iapN6UlyaDtyRq4b5U1FuW0v1lRa9Fp/GJyHkSwm6NqABgCA==
-  /eslint-config-k03mad/4.1.1_8845b19ce6ea06e20ce30d578809b8d2:
+  /eslint-config-k03mad/4.2.0_8845b19ce6ea06e20ce30d578809b8d2:
     dependencies:
       eslint: 6.8.0
       eslint-plugin-const-case: 1.2.2
@@ -621,14 +621,14 @@ packages:
     peerDependencies:
       eslint: '>=6.8.0'
       eslint-plugin-const-case: '>=1.2.2'
-      eslint-plugin-jsdoc: '>=22.0.0'
+      eslint-plugin-jsdoc: '>=22.1.0'
       eslint-plugin-node: '>=11.0.0'
       eslint-plugin-promise: '>=4.2.1'
       eslint-plugin-sonarjs: '>=0.5.0'
       eslint-plugin-sort-requires: '>=2.1.0'
-      eslint-plugin-unicorn: '>=17.1.0'
+      eslint-plugin-unicorn: '>=17.2.0'
     resolution:
-      integrity: sha512-yMO5WJt+8PAwp7ytWAiQKJuznfdYB4eXWie/vSmO9C63zlTPbyA2zhyjk+TtfH+HpbikicbGW5Q110JuI98gcg==
+      integrity: sha512-LbHit4SRgTNn1/w37FJDciHli1Q/wGIdZCCxBC2DPa/Fx3bUDrmRy1/X7Z4iR8Lm+OJvrR1NmTi/slumCjAktA==
   /eslint-plugin-const-case/1.2.2:
     dependencies:
       requireindex: 1.2.0
@@ -2160,7 +2160,7 @@ specifiers:
   command-line-args: 5.1.1
   command-line-usage: 6.1.0
   eslint: 6.8.0
-  eslint-config-k03mad: 4.1.1
+  eslint-config-k03mad: 4.2.0
   eslint-plugin-const-case: 1.2.2
   eslint-plugin-jsdoc: 22.1.0
   eslint-plugin-node: 11.0.0

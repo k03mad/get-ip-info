@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/get-ip-info",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
   ],
@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "eslint": "6.8.0",
-    "eslint-config-k03mad": "4.1.1",
+    "eslint-config-k03mad": "4.2.0",
     "eslint-plugin-const-case": "1.2.2",
     "eslint-plugin-jsdoc": "22.1.0",
     "eslint-plugin-node": "11.0.0",
