@@ -14,6 +14,7 @@ if (args.help) {
 }
 
 (async () => {
+    const errors = [];
 
     const data = args.ip
         ? services
@@ -28,10 +29,8 @@ if (args.help) {
         });
 
     await Promise.all(data.map(async elem => {
-        const output = [];
-
         try {
-            output.push(options.urlColor(elem.request));
+            const output = [options.urlColor(elem.request)];
             let {body} = await request.got(elem.request);
 
             if (elem.xmlPath) {
@@ -61,11 +60,15 @@ if (args.help) {
                     output.push(`${options.indent}${key}: ${valueColor(value)}`);
                 }
             }
-        } catch (err) {
-            output.push(options.errColor(err));
-        }
 
-        console.log(`\n${output.join('\n')}`);
+            console.log(`${output.join('\n')}\n`);
+        } catch (err) {
+            errors.push(`${options.urlColor(elem.request)} ${options.errColor(err)}`);
+        }
     }));
 
+    if (errors.length > 0) {
+        console.log(errors.join('\n\n'));
+        process.exit(1);
+    }
 })();
