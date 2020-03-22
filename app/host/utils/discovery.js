@@ -1,6 +1,6 @@
 'use strict';
 
-const internalIp = require('internal-ip');
+const myLocalIpIs = require('my-local-ip-is');
 const options = require('../options');
 const pTimeout = require('p-timeout');
 const {shell} = require('utils-mad');
@@ -8,7 +8,7 @@ const {shell} = require('utils-mad');
 module.exports = async () => {
     const deviceObject = {};
 
-    const ip = await internalIp.v4();
+    const [{ip}] = myLocalIpIs();
     const cidr = `${ip.split('.').slice(0, -1).join('.')}.0/24`;
 
     const nmap = await pTimeout(shell.run(options.nmapPing(cidr)), options.nmapTimeoutPing);
