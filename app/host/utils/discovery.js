@@ -1,27 +1,25 @@
 'use strict';
 
-const LanDiscovery = require('lan-discovery');
-const range = require('cidr-range');
+const internalIp = require('internal-ip');
+const options = require('../options');
+const pTimeout = require('p-timeout');
+const {shell} = require('utils-mad');
 
 module.exports = async () => {
-    const discovery = new LanDiscovery({timeout: 60});
-    const {cidr} = await discovery.getDefaultInterface();
+    const deviceObject = {};
 
-    return new Promise(resolve => {
-        discovery.startScan({ipArrayToScan: range(cidr)});
-        discovery.on(LanDiscovery.EVENT_DEVICES_INFOS, devices => {
-            const deviceObject = {};
+    const ip = await internalIp.v4();
+    const cidr = `${ip.split('.').slice(0, -1).join('.')}.0/24`;
 
-            devices.forEach(({ip, name, mac}) => {
-                if (
-                    !ip.endsWith('.0')
-                    && !ip.endsWith('.255')
-                ) {
-                    deviceObject[ip] = {name, mac};
-                }
-            });
+    const nmap = await pTimeout(shell.run(options.nmapPing(cidr)), options.nmapTimeoutPing);
 
-            resolve({deviceObject, cidr});
-        });
-    });
+    for (const elem of nmap.split(options.nmapNewLine)) {
+        const matched = elem.match(options.nmapIp);
+
+        if (matched) {
+            deviceObject[matched[1]] = {};
+        }
+    }
+
+    return {deviceObject, cidr};
 };

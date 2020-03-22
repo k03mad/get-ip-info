@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/get-ip-info",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
   ],
@@ -14,11 +14,10 @@
     "node": ">=13"
   },
   "dependencies": {
-    "cidr-range": "2.0.0",
     "colorette": "1.1.0",
     "command-line-args": "5.1.1",
     "command-line-usage": "6.1.0",
-    "lan-discovery": "1.0.1",
+    "internal-ip": "6.0.0",
     "libnmap": "0.4.19",
     "ms": "2.1.2",
     "oui": "11.0.3",
