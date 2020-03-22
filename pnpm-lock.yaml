@@ -955,7 +955,7 @@ packages:
       esutils: 2.0.3
       file-entry-cache: 5.0.1
       functional-red-black-tree: 1.0.1
-      glob-parent: 5.1.0
+      glob-parent: 5.1.1
       globals: 12.4.0
       ignore: 4.0.6
       import-fresh: 3.2.1
@@ -1061,7 +1061,7 @@ packages:
     dependencies:
       '@nodelib/fs.stat': 2.0.3
       '@nodelib/fs.walk': 1.2.4
-      glob-parent: 5.1.0
+      glob-parent: 5.1.1
       merge2: 1.3.0
       micromatch: 4.0.2
       picomatch: 2.2.2
@@ -1186,13 +1186,13 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-EXr1FOzrzTfGeL0gQdeFEvOMm2mzMOglyiOXSTpPC+iAjAKftbr3jpCMWynogwYnM+eSj9sHGc6wjIcDvYiygw==
-  /glob-parent/5.1.0:
+  /glob-parent/5.1.1:
     dependencies:
       is-glob: 4.0.1
     engines:
       node: '>= 6'
     resolution:
-      integrity: sha512-qjtRgnIVmOfnKUE3NJAQEdk+lKrxfw8t5ke7SXtfMTHcjsBfOfWXCQfdb30zfDoZQ2IRSIiidmjtbHZPZ++Ihw==
+      integrity: sha512-FnI+VGOpnlGHWZxthPGR+QhR78fuiK0sNLkHQv+bL9fQi57lNNdquIbna/WrfROrolq8GK5Ek6BiMwqL/voRYQ==
   /glob/7.1.6:
     dependencies:
       fs.realpath: 1.0.0
