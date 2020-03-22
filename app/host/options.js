@@ -8,9 +8,13 @@ module.exports = {
     ipColor: blue,
     valueColor: green,
     timeColor: cyan,
+    warningColor: yellow,
+    errorColor: red,
 
     scanMessageColor: magenta,
     scanMessageSeparator: '—',
+
+    arp: 'arp -a -n',
 
     nmapLite: ip => `nmap -Pn ${ip}`,
     nmapTimeoutLite: 2 * 60000,
@@ -21,6 +25,4 @@ module.exports = {
     nmapNewLine: /[\n\r]+/,
     nmapPort: /(^\d+\/\S+)|^Service Info:/,
 
-    warningColor: yellow,
-    errorColor: red,
 };
