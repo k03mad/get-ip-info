@@ -15,8 +15,8 @@ module.exports = async ({deviceObject, cidr}) => {
 
             if (
                 ip.startsWith(cidr.split('.').slice(0, -1).join('.'))
-            && !ip.endsWith('.0')
-            && !ip.endsWith('.255')
+                && !ip.endsWith('.0')
+                && !ip.endsWith('.255')
             ) {
                 if (deviceObjectClone[ip]) {
                     deviceObjectClone[ip].mac = mac;
