@@ -6,14 +6,13 @@ const {gray} = require('colorette');
 
 const args = [
     {
-        description: `get ip info ${gray('(default: current ip)')}`,
+        description: `get geoip info ${gray('(default: current ip)')}`,
         name: 'ip',
         alias: 'i',
     },
     {
         description: 'print this help',
         name: 'help',
-        alias: 'h',
         type: Boolean,
     },
 ];

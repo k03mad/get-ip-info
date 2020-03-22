@@ -3,9 +3,9 @@
 'use strict';
 
 const convert = require('xml-js');
-const options = require('./lib/options');
-const services = require('./lib/services');
-const {args, help} = require('./lib/help');
+const options = require('./ip/options');
+const services = require('./ip/services');
+const {args, help} = require('./ip/cli');
 const {request, object} = require('utils-mad');
 
 if (args.help) {
@@ -67,7 +67,7 @@ if (args.help) {
                     : options.othersColor;
 
                 if (key) {
-                    return `${options.indent}${key}: ${valueColor(value)}`;
+                    return options.addIndent(`${key}: ${valueColor(value)}`);
                 }
 
                 return valueColor(value);
@@ -80,7 +80,7 @@ if (args.help) {
     }));
 
     if (errors.length > 0) {
-        console.log(errors.join('\n\n'));
+        console.error(errors.join('\n\n'));
         process.exit(1);
     }
 })();

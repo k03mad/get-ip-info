@@ -1,9 +1,9 @@
 'use strict';
 
-const {blue, cyan, yellow, red} = require('colorette');
+const {blue, cyan, yellow, red, gray} = require('colorette');
 
 module.exports = {
-    indent: '⎣ ',
+    addIndent: message => gray('⎣ ') + message,
 
     numbersRegExp: /^[\d ,.-]+$/i,
 
