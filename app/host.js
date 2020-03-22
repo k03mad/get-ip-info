@@ -74,9 +74,9 @@ if (args.help) {
         }
     }
 
-    print.separator('Start port scan with version detection');
-
     if (devicesWithOpenPorts.length > 0) {
+        print.separator('Start port scan with version detection');
+
         for (const [ip, data] of devicesWithOpenPorts) {
             print.devices(ip, data);
 
