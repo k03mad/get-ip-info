@@ -3,7 +3,7 @@
 const options = require('../options');
 const {shell} = require('utils-mad');
 
-module.exports = async ({deviceObject, cidr}) => {
+module.exports = async deviceObject => {
     const deviceObjectClone = {...deviceObject};
 
     const arp = await shell.run(options.arp);
@@ -15,9 +15,10 @@ module.exports = async ({deviceObject, cidr}) => {
             const [, ip, mac] = matched;
 
             if (
-                ip.startsWith(cidr.split('.').slice(0, -1).join('.'))
-                && !ip.endsWith('.0')
-                && !ip.endsWith('.255')
+                !ip.endsWith('.0')
+                && !ip.includes('.255')
+                // multicast
+                && !ip.match(/^(22[4-9]|23\d)/)
             ) {
                 if (deviceObjectClone[ip]) {
                     deviceObjectClone[ip].mac = mac;
