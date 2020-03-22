@@ -75,7 +75,7 @@ if (args.help) {
     }
 
     if (devicesWithOpenPorts.length > 0) {
-        print.separator('Start port scan with version detection');
+        print.separator('Start port scan with version detection (only for devices with detected ports at previous step)');
 
         for (const [ip, data] of devicesWithOpenPorts) {
             print.devices(ip, data);
@@ -87,11 +87,7 @@ if (args.help) {
                 print.elapsed(time);
 
                 for (const elem of nmap.split(options.nmapNewLine)) {
-                    const matched = elem.match(options.nmapPort);
-
-                    if (matched) {
-                        console.log(options.addIndent(elem));
-                    }
+                    console.log(options.addIndent(elem));
                 }
 
             } catch (err) {

@@ -19,10 +19,10 @@ module.exports = {
     nmapPing: ip => `nmap -sn ${ip}`,
     nmapTimeoutPing: 1 * 60000,
 
-    nmapLite: ip => `nmap -Pn ${ip}`,
+    nmapLite: ip => `nmap -Pn -T4 ${ip}`,
     nmapTimeoutLite: 2 * 60000,
 
-    nmapFull: ip => `nmap -Pn -sV ${ip}`,
+    nmapFull: ip => `nmap -Pn -sV -T4 ${ip}`,
     nmapTimeoutFull: 10 * 60000,
 
     nmapNewLine: /[\n\r]+/,
