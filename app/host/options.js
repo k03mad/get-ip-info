@@ -16,12 +16,7 @@ module.exports = {
 
     arp: 'arp -a -n',
 
-    nmapPing: ip => `nmap -sn -PA${[
-        20 - 25, 53, 67, 68, 80, 110, 111, 119, 123,
-        135, 139, 143, 161, 194, 443, 445, 853, 993,
-        995, 1723, 3306, 3389, 5900, 8080,
-    ].join()} ${ip}`,
-
+    nmapPing: ip => `nmap -sn ${ip}`,
     nmapTimeoutPing: 1 * 60000,
 
     nmapLite: ip => `nmap -Pn ${ip}`,
