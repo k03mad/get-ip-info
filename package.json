@@ -11,7 +11,7 @@
   },
   "preferGlobal": true,
   "engines": {
-    "node": ">=13"
+    "node": ">=14"
   },
   "dependencies": {
     "colorette": "1.1.0",
@@ -22,19 +22,19 @@
     "my-local-ip-is": "1.0.7",
     "oui": "11.0.5",
     "p-timeout": "3.2.0",
-    "utils-mad": "7.4.4",
+    "utils-mad": "7.5.3",
     "xml-js": "1.6.11"
   },
   "devDependencies": {
     "eslint": "6.8.0",
     "eslint-config-k03mad": "4.2.0",
     "eslint-plugin-const-case": "1.2.2",
-    "eslint-plugin-jsdoc": "23.0.0",
+    "eslint-plugin-jsdoc": "24.0.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-sonarjs": "0.5.0",
     "eslint-plugin-sort-requires": "2.1.0",
-    "eslint-plugin-unicorn": "18.0.1",
+    "eslint-plugin-unicorn": "19.0.0",
     "pre-commit": "1.2.2"
   },
   "scripts": {
