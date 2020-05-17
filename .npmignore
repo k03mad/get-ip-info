@@ -1,4 +1,4 @@
 .editorconfig
 .eslintrc.js
 .nvmrc
-pnpm-lock.yaml
+.huskyrc.js

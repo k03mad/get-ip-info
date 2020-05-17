@@ -13,6 +13,7 @@ const args = [
     {
         description: 'print this help',
         name: 'help',
+        alias: 'h',
         type: Boolean,
     },
 ];

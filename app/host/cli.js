@@ -8,11 +8,12 @@ const args = [
     {
         description: `get host info ${gray('(default: all hosts from current lan)')}`,
         name: 'host',
-        alias: 'h',
+        alias: 'i',
     },
     {
         description: 'print this help',
         name: 'help',
+        alias: 'h',
         type: Boolean,
     },
 ];

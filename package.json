@@ -6,8 +6,8 @@
   ],
   "repository": "k03mad/get-ip-info",
   "bin": {
-    "ip-info": "./app/ip.js",
-    "host-info": "./app/host.js"
+    "mad-ip": "./app/ip.js",
+    "mad-host": "./app/host.js"
   },
   "preferGlobal": true,
   "engines": {
@@ -22,12 +22,12 @@
     "my-local-ip-is": "1.0.7",
     "oui": "11.0.14",
     "p-timeout": "3.2.0",
-    "utils-mad": "7.7.0",
+    "utils-mad": "7.7.2",
     "xml-js": "1.6.11"
   },
   "devDependencies": {
     "eslint": "7.0.0",
-    "eslint-config-k03mad": "4.2.2",
+    "eslint-config-k03mad": "4.3.0",
     "eslint-plugin-const-case": "1.2.2",
     "eslint-plugin-jsdoc": "25.4.1",
     "eslint-plugin-node": "11.1.0",
