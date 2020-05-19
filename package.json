@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "eslint": "7.0.0",
-    "eslint-config-k03mad": "4.3.0",
+    "eslint-config-k03mad": "5.0.0",
     "eslint-plugin-const-case": "1.2.2",
     "eslint-plugin-jsdoc": "25.4.2",
     "eslint-plugin-node": "11.1.0",
