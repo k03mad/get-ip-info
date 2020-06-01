@@ -2,6 +2,10 @@
 
 const oui = require('oui');
 
+/**
+ * @param {object} deviceObject
+ * @returns {object}
+ */
 module.exports = deviceObject => Object.fromEntries(
     Object.entries(deviceObject).map(elem => {
         if (elem[1].mac) {

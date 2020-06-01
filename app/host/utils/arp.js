@@ -3,6 +3,10 @@
 const options = require('../options');
 const {shell} = require('utils-mad');
 
+/**
+ * @param {object} deviceObject
+ * @returns {object}
+ */
 module.exports = async deviceObject => {
     const deviceObjectClone = {...deviceObject};
 

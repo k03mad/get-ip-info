@@ -5,6 +5,7 @@ const options = require('../options');
 const pTimeout = require('p-timeout');
 const {shell} = require('utils-mad');
 
+/** @returns {object} */
 module.exports = async () => {
     const deviceObject = {};
 
