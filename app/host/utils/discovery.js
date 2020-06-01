@@ -10,7 +10,10 @@ module.exports = async () => {
     const deviceObject = {};
 
     const ips = myLocalIpIs();
-    console.log(`current ip\n${options.addIndent(ips.map(elem => Object.values(elem).join(': ')))}`);
+    console.log(`current ip\n${ips
+        .map(elem => options.addIndent(Object.values(elem).join(': ')))
+        .join('\n')
+    }`);
 
     for (const {ip} of ips) {
         const cidr = `${ip.split('.').slice(0, -1).join('.')}.0/24`;
