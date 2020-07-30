@@ -3,6 +3,8 @@
 const {blue, green, gray, magenta, red, yellow, cyan} = require('colorette');
 
 module.exports = {
+    /* eslint-disable jsdoc/require-jsdoc */
+
     addIndent: message => gray('⎣ ') + message,
 
     ipColor: blue,

@@ -4,6 +4,8 @@ const ms = require('ms');
 const options = require('../options');
 
 module.exports = {
+    /* eslint-disable jsdoc/require-jsdoc */
+
     devices: (ip, data) => {
         console.log(`\n${options.ipColor(ip)}`);
 
