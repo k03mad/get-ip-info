@@ -14,7 +14,7 @@
     "node": ">=14"
   },
   "dependencies": {
-    "colorette": "1.2.1",
+    "chalk": "4.1.0",
     "command-line-args": "5.1.1",
     "command-line-usage": "6.1.0",
     "libnmap": "0.4.19",
@@ -38,7 +38,7 @@
   },
   "scripts": {
     "lint": "eslint ./ --report-unused-disable-directives --format=codeframe --ignore-pattern='!.*'",
-    "setup": "npm i"
+    "setup": "pnpm i"
   },
   "license": "Unlicense"
 }
