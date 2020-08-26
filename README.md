@@ -4,7 +4,7 @@
 npm i @k03mad/get-ip-info -g
 
 # geoip
-tools-ip
+mad-tools-ip
 # open ports (requires: arp, nmap)
-tools-host
+mad-tools-host
 ```

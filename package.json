@@ -6,8 +6,8 @@
   ],
   "repository": "k03mad/get-ip-info",
   "bin": {
-    "tools-ip": "./app/ip.js",
-    "tools-host": "./app/host.js"
+    "mad-tools-ip": "./app/ip.js",
+    "mad-tools-host": "./app/host.js"
   },
   "preferGlobal": true,
   "engines": {
