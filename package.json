@@ -22,7 +22,7 @@
     "my-local-ip-is": "1.0.7",
     "oui": "11.0.35",
     "p-timeout": "3.2.0",
-    "utils-mad": "9.3.1",
+    "utils-mad": "9.3.2",
     "xml-js": "1.6.11"
   },
   "devDependencies": {
@@ -38,7 +38,7 @@
   },
   "scripts": {
     "lint": "eslint ./ --report-unused-disable-directives --format=codeframe --ignore-pattern='!.*'",
-    "setup": "pnpm i"
+    "setup": "yarn install"
   },
   "license": "Unlicense"
 }
