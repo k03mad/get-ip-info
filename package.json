@@ -20,21 +20,21 @@
     "libnmap": "0.4.19",
     "ms": "2.1.2",
     "my-local-ip-is": "1.0.7",
-    "oui": "11.0.32",
+    "oui": "11.0.35",
     "p-timeout": "3.2.0",
-    "utils-mad": "9.3.0",
+    "utils-mad": "9.3.1",
     "xml-js": "1.6.11"
   },
   "devDependencies": {
-    "eslint": "7.7.0",
+    "eslint": "7.9.0",
     "eslint-config-k03mad": "5.0.2",
-    "eslint-plugin-jsdoc": "30.3.0",
+    "eslint-plugin-jsdoc": "30.4.2",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-sonarjs": "0.5.0",
     "eslint-plugin-sort-requires": "2.1.0",
     "eslint-plugin-unicorn": "21.0.0",
-    "husky": "4.2.5"
+    "husky": "4.3.0"
   },
   "scripts": {
     "lint": "eslint ./ --report-unused-disable-directives --format=codeframe --ignore-pattern='!.*'",
