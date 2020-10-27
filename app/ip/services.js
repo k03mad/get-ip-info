@@ -1,8 +1,6 @@
 'use strict';
 
 module.exports = [
-    /* eslint-disable jsdoc/require-jsdoc */
-
     {
         currentIp: 'https://ifconfig.me/all.json',
         removeKeys: ['remote_host', 'method'],
