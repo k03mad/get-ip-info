@@ -47,7 +47,7 @@ if (args.help) {
         print.devices(ip, data);
 
         try {
-            const time = new Date().getTime();
+            const time = Date.now();
 
             const nmap = await pTimeout(shell.run(options.nmapLite(ip)), options.nmapTimeoutLite);
             print.elapsed(time);
@@ -81,7 +81,7 @@ if (args.help) {
             print.devices(ip, data);
 
             try {
-                const time = new Date().getTime();
+                const time = Date.now();
 
                 const nmap = await pTimeout(shell.run(options.nmapFull(ip)), options.nmapTimeoutFull);
                 print.elapsed(time);

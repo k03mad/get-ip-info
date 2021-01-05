@@ -26,7 +26,7 @@ module.exports = {
     },
 
     elapsed: time => {
-        console.log(options.addIndent(`passed: ${options.timeColor(ms(new Date().getTime() - time))}`));
+        console.log(options.addIndent(`passed: ${options.timeColor(ms(Date.now() - time))}`));
     },
 
     warning: warn => {
