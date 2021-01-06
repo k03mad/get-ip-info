@@ -1,10 +1,10 @@
 {
-  "name": "@k03mad/lan-tools",
+  "name": "@k03mad/cli-tools-lan",
   "version": "3.3.27",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
   ],
-  "repository": "k03mad/lan-tools",
+  "repository": "k03mad/cli-tools-lan",
   "bin": {
     "mad-lan-ip": "./app/ip.js",
     "mad-lan-host": "./app/host.js"
