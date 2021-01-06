@@ -1,13 +1,13 @@
 {
-  "name": "@k03mad/get-ip-info",
+  "name": "@k03mad/lan-tools",
   "version": "3.3.27",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
   ],
-  "repository": "k03mad/get-ip-info",
+  "repository": "k03mad/lan-tools",
   "bin": {
-    "mad-tools-ip": "./app/ip.js",
-    "mad-tools-host": "./app/host.js"
+    "mad-lan-ip": "./app/ip.js",
+    "mad-lan-host": "./app/host.js"
   },
   "preferGlobal": true,
   "engines": {
