@@ -6,8 +6,8 @@
   ],
   "repository": "k03mad/cli-tools-lan",
   "bin": {
-    "mad-lan-ip": "./app/ip.js",
-    "mad-lan-host": "./app/host.js"
+    "mad_lan_ip": "./app/ip.js",
+    "mad_lan_host": "./app/host.js"
   },
   "preferGlobal": true,
   "engines": {
