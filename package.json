@@ -1,5 +1,6 @@
 {
   "name": "@k03mad/cli-tools-lan",
+  "description": "My CLI tools",
   "version": "3.3.30",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -9,7 +10,6 @@
     "mad_lan_ip": "./app/ip.js",
     "mad_lan_host": "./app/host.js"
   },
-  "preferGlobal": true,
   "engines": {
     "node": ">=14"
   },
@@ -19,20 +19,20 @@
     "command-line-usage": "6.1.1",
     "ms": "2.1.3",
     "my-local-ip-is": "1.0.7",
-    "oui": "11.0.48",
+    "oui": "11.0.49",
     "p-timeout": "4.1.0",
-    "utils-mad": "9.11.1",
+    "utils-mad": "9.11.4",
     "xml-js": "1.6.11"
   },
   "devDependencies": {
     "eslint": "7.17.0",
     "eslint-config-k03mad": "6.0.4",
-    "eslint-plugin-jsdoc": "30.7.13",
+    "eslint-plugin-jsdoc": "31.0.5",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-sort-requires": "2.1.0",
-    "eslint-plugin-unicorn": "25.0.1",
-    "husky": "4.3.6"
+    "eslint-plugin-unicorn": "26.0.1",
+    "husky": "4.3.7"
   },
   "scripts": {
     "lint": "eslint ./ --report-unused-disable-directives --format=codeframe --ignore-pattern='!.*'",

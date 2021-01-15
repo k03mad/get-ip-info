@@ -62,7 +62,7 @@ if (args.help) {
             }
 
             const printData = output.map(({key, value}) => {
-                const valueColor = value.match(options.numbersRegExp)
+                const valueColor = options.numbersRegExp.test(value)
                     ? options.numbersColor
                     : options.othersColor;
 
