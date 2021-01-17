@@ -21,7 +21,7 @@
     "my-local-ip-is": "1.0.7",
     "oui": "11.0.50",
     "p-timeout": "4.1.0",
-    "utils-mad": "10.1.0",
+    "utils-mad": "10.2.0",
     "xml-js": "1.6.11"
   },
   "devDependencies": {
