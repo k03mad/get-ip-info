@@ -11,6 +11,8 @@ const pTimeout = require('p-timeout');
 const {args, help} = require('./host/cli');
 const {shell} = require('utils-mad');
 
+require('../updater');
+
 if (args.help) {
     console.log(help);
     process.exit(0);

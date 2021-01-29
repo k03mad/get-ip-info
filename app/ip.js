@@ -8,6 +8,8 @@ const services = require('./ip/services');
 const {args, help} = require('./ip/cli');
 const {request, object} = require('utils-mad');
 
+require('../updater');
+
 if (args.help) {
     console.log(help);
     process.exit(0);
