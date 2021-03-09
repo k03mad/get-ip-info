@@ -9,7 +9,7 @@ const oui = require('./host/utils/oui');
 const print = require('./host/utils/print');
 const pTimeout = require('p-timeout');
 const {args, help} = require('./host/cli');
-const {shell} = require('utils-mad');
+const {shell} = require('@k03mad/utils');
 
 require('../updater');
 

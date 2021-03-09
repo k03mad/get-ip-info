@@ -3,7 +3,7 @@
 const myLocalIpIs = require('my-local-ip-is');
 const options = require('../options');
 const pTimeout = require('p-timeout');
-const {shell} = require('utils-mad');
+const {shell} = require('@k03mad/utils');
 
 /** @returns {object} */
 module.exports = async () => {

@@ -1,7 +1,7 @@
 'use strict';
 
 const options = require('../options');
-const {shell} = require('utils-mad');
+const {shell} = require('@k03mad/utils');
 
 /**
  * @param {object} deviceObject

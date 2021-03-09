@@ -6,7 +6,7 @@ const convert = require('xml-js');
 const options = require('./ip/options');
 const services = require('./ip/services');
 const {args, help} = require('./ip/cli');
-const {request, object} = require('utils-mad');
+const {request, object} = require('@k03mad/utils');
 
 require('../updater');
 
