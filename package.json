@@ -15,7 +15,7 @@
     "node": ">=14"
   },
   "dependencies": {
-    "@k03mad/utils": "14.0.1",
+    "@k03mad/utils": "14.1.0",
     "chalk": "4.1.0",
     "command-line-args": "5.1.1",
     "command-line-usage": "6.1.1",
@@ -28,7 +28,7 @@
   },
   "devDependencies": {
     "@k03mad/eslint-config": "8.0.0",
-    "eslint": "7.21.0",
+    "eslint": "7.23.0",
     "eslint-plugin-jsdoc": "32.3.0",
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.3.1",
