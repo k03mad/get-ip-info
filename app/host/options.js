@@ -19,13 +19,13 @@ module.exports = {
     arp: 'arp -a -n',
 
     nmapPing: ip => `nmap -sn ${ip}`,
-    nmapTimeoutPing: 1 * 60000,
+    nmapTimeoutPing: 1 * 60_000,
 
     nmapLite: ip => `nmap -Pn -T4 ${ip}`,
-    nmapTimeoutLite: 2 * 60000,
+    nmapTimeoutLite: 2 * 60_000,
 
     nmapFull: ip => `nmap -Pn -sV -T4 ${ip}`,
-    nmapTimeoutFull: 10 * 60000,
+    nmapTimeoutFull: 10 * 60_000,
 
     nmapNewLine: /[\n\r]+/,
     nmapIp: /for ((?:\d{1,3}\.){3}\d{1,3})/,
