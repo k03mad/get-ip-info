@@ -17,6 +17,7 @@ module.exports = {
     scanMessageSeparator: '—',
 
     arp: 'arp -a -n',
+    noArp: 'ip neigh show dev wlan0',
 
     nmapPing: ip => `nmap -sn ${ip}`,
     nmapTimeoutPing: 1 * 60_000,

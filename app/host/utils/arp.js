@@ -9,21 +9,25 @@ const {shell} = require('@k03mad/utils');
  */
 module.exports = async deviceObject => {
     const deviceObjectClone = {...deviceObject};
-    let arp;
+
+    let arp, noArp;
 
     try {
         arp = await shell.run(options.arp);
-    } catch (err) {
-        if (/permission/i.test(err)) {
+    } catch {
+        try {
             arp = await shell.run(`sudo ${options.arp}`);
-        } else {
-            throw err;
+        } catch (err) {
+            try {
+                noArp = await shell.run(options.noArp);
+            } catch {
+                throw new Error(`Cannot run arp command\n${err}`);
+            }
         }
-
     }
 
-    arp.split('\n').forEach(elem => {
-        const matched = elem.match(/\(((?:\d{1,3}\.){3}\d{1,3})\).+at (([\da-z]{1,2}[:-]){5}([\da-z]{1,2}))/);
+    (arp || noArp).split('\n').forEach(elem => {
+        const matched = elem.match(/((?:\d{1,3}\.){3}\d{1,3}).+ (([\da-z]{1,2}[:-]){5}([\da-z]{1,2}))/);
 
         if (matched) {
             const [, ip, mac] = matched;
